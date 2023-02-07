@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="content">
+    <form id="resetForm">
+        <div>
+        <label for ="city">City</label>
+        <input type="text" name="city" id="city"/>
+        </div>
+        <div>
+        <label for ="state">State</label>
+        <select name="state" id="state" required>
+            <option value="" disabled selected hidden>--</option>
+        </select>
+        </div>
+        <button type="submit" class="button">🔍</button>
+    </form>
+    <div class="saved-div">
+    <div class="weather">
+        <h2 class="city-Id"></h2>
+        <h1 class="temp-Id"></h1>
+        <h3 class="sky-conditions"></h3>
+        <h3 class="humidity"></h3>
+        <h3 class="wind-speed"></h3>
+        <button type="button" id="addHomeCity">Save Location</button>
+    </div>
+    <div class = "fieldset">
+        <fieldset>
+            <legend>Favorite Locations</legend>
+        </fieldset>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
